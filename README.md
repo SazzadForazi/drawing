@@ -2,6 +2,10 @@
 
 Professional browser-based whiteboard and drawing workspace built with React, Vite, HTML5 Canvas, Tailwind CSS, and Lucide icons.
 
+## Live Demo
+
+https://SazzadForazi.github.io/drawing/
+
 ## Features
 
 - Smooth freehand drawing with Pointer Events, pressure-aware strokes, touch support, and high-DPI rendering
@@ -70,16 +74,26 @@ npm run preview
 - Manual Save also writes to `localStorage`
 - JSON export preserves layers, objects, colors, background, and images stored as data URLs
 
-## Netlify Deployment
+## GitHub Pages Deployment
 
 1. Push the project to GitHub.
-2. Create a new Netlify site from that repository.
-3. Use:
-   - Build command: `npm run build`
-   - Publish directory: `dist`
-4. Deploy.
+2. Run:
 
-For SPA routing safety, this app does not need custom redirect rules because it stays on a single route.
+```bash
+npm install
+npm run deploy
+```
+
+3. In the repository settings, open `Pages`.
+4. Set:
+   - Source: `Deploy from a branch`
+   - Branch: `gh-pages`
+   - Folder: `/ (root)`
+5. Save.
+
+Live site:
+
+https://SazzadForazi.github.io/drawing/
 
 ## Future Improvements
 
